@@ -8,6 +8,15 @@ In particolare, descriveremo l’obiettivo del progetto, le tecnologie scelte pe
 # Obiettivo del progetto
 Gli utenti dei social media sono soliti associare ai propri contenuti multimediali, diversi hashtags. Tale pratica di etichettatura risulta estremamente utile alla comprensione semantica di tali contenuti. L’obiettivo del progetto è quindi quello della misurazione della similarità tra hashtags mediante l’analisi semantica e l’analisi dei contenuti multimediali, quali video e foto, associati a tali tag.  A tal proposito, è stato richiesto istanziare uno dei tanti tool a disposizione per tradurre il linguaggio naturale in vettori in spazi semantici, utilizzando come dati di input un opportuno dataset <risorsa, {hashtag}>.
 
+# Word Embedding e Word2Vec
+Il Word Embedding è un approccio che consente di mappare le parole all'interno di un testo in un valore numerico('embed').
+Ogni parola è rappresentata da un punto nello spazio e questi punti vengono appresi e spostati in base alle parole che circondano la parola target.
+Uno degli algoritmi utilizzati per l'apprendimento del word embedding è Word2vec.
+Word2vec è implementato come una rete neurale artificiale a due strati.
+Tale algoritmo riceve in input un Vocabolario di parole e restituisce un insieme di vettori che rappresentano la distribuzione semantica delle parole nel testo. 
+Ogni parola quindi viene rappresentata da un vettore, cosa che ci consente di rappresentare tale vettore nello spazio.
+In questo spazio le parole saranno più vicine se riconosciute come semanticamente più simili. 
+
 # Tecnologie utilizzate
 ## Instaloader
 Instaloader è un ‘command-line’ tool che consente di:
